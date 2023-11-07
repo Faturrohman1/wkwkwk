@@ -24,6 +24,7 @@ class UpdateKerjasamaRequest extends FormRequest
     public function rules()
     {
         return [
+            'nomer_perusahaan'     => 'required',
             'nama_instansi'     => 'required',
             'jenis_kegiatan'    => 'required',
             'manfaat'           => 'required',
@@ -36,7 +37,8 @@ class UpdateKerjasamaRequest extends FormRequest
             'mou'               =>  'sometimes|nullable|mimes:docx,pdf',
             'nomor_mou'         =>  'required',
             'nomor_mou_old'         =>  'required',
-            'file_mou'         =>  'required'
+            'file_mou'         =>  'required',
+            'contact_person'     => 'required',
         ];
     }
 }

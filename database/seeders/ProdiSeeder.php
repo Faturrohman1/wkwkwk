@@ -19,7 +19,9 @@ class ProdiSeeder extends Seeder
             ['nama_prodi'    =>  'Teknik Sipil'],
             ['nama_prodi'    =>  'Agribisnis'],
             ['nama_prodi'    =>  'Teknik Informatika'],
-            ['nama_prodi'    =>  'Teknologi Pengolahan Hasil Ternak']
+            ['nama_prodi'    =>  'Teknologi Pengolahan Hasil Ternak'],
+            ['nama_prodi'    =>  'Managemen Bisnis Pariwisata']
+
         ];
         Prodi::insert($data);
     }

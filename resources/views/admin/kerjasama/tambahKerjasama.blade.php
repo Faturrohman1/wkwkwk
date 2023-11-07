@@ -37,6 +37,18 @@
                                             @enderror
                                         </div>
                                         <div class="form-group">
+                                            <label for="exampleInputinstansi1">Nomer Perusahaan</label>
+                                            <input type="text" name="nomer_perusahaan"
+                                                class="form-control  @error('nomer_perusahaan')
+                                                is-invalid
+                                            @enderror"
+                                                id="exampleInputinstansi1" aria-describedby="instansiHelp"
+                                                placeholder="Masukan Nomer Perusahaan" value="{{ old('nomer_perusahaan') }}">
+                                            @error('nomer_perusahaan')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                        <div class="form-group">
                                             <label for="exampleInputkegiatan1">Jenis Kegiatan</label>
                                             <input type="text" name="jenis_kegiatan"
                                                 class="form-control @error('jenis_kegiatan')
@@ -178,6 +190,18 @@
                                                 </option>
                                             </select>
                                             @error('hard_file')
+                                                <div class="alert alert-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputinstansi1">Contact Person</label>
+                                            <input type="text" name="contact_person"
+                                                class="form-control  @error('contact_person')
+                                                is-invalid
+                                            @enderror"
+                                                id="exampleInputinstansi1" aria-describedby="instansiHelp"
+                                                placeholder="Masukan Contact Person" value="{{ old('contact_person') }}">
+                                            @error('contact_person')
                                                 <div class="alert alert-danger">{{ $message }}</div>
                                             @enderror
                                         </div>

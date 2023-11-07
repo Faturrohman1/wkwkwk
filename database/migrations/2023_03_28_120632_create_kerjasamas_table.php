@@ -18,11 +18,13 @@ class CreateKerjasamasTable extends Migration
             $table->foreignId('id_user')->references('id')->on('users');
             $table->foreignId('id_kategori')->references('id_kategori')->on('kategoris');
             $table->string('nama_instansi');
+            $table->string('nomer_perusahaan');
             $table->string('nomor_mou');
             $table->string('file_mou');
             $table->string('jenis_kegiatan');
             $table->string('manfaat');
             $table->string('implementasi');
+            $table->string('contact_person');
             $table->date('tgl_mulai');
             $table->date('tgl_berakhir');
             $table->tinyInteger('status')->default(0);

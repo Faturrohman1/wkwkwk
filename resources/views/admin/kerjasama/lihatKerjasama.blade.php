@@ -108,9 +108,11 @@
                                             <th scope="col">No</th>
                                             <th scope="col">Nomor Mou</th>
                                             <th scope="col">Nama Instansi</th>
+                                            <th scope="col">Nomer Perusahaan</th>
                                             <th scope="col">Kategori</th>
                                             <th scope="col">Tanggal Mulai</th>
                                             <th scope="col">Tanggal Berakhir</th>
+                                            <th scope="col">Contact Person</th>
                                             <th scope="col">Hard File</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Soft File</th>
@@ -125,9 +127,11 @@
                                                 <td><a href="/download/{{ $item->nomor_mou }}">{{ $item->nomor_mou }}</a>
                                                 </td>
                                                 <td>{{ $item->nama_instansi }}</td>
+                                                <td>{{ $item->nama_instansi }}</td>
                                                 <td>{{ $item->kategori->nama_kategori }}</td>
                                                 <td>{{ $item->tgl_mulai }}</td>
                                                 <td>{{ $item->tgl_berakhir }}</td>
+                                                <td>{{ $item->contact_person }}</td>
 
                                                 <td>
                                                     {{ $item->hard_file == 0 ? 'Tidak Tersedia' : 'Tersedia' }}
